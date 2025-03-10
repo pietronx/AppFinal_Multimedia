@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondorojo">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:background="#DB363E"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#DB363E"
+            app:title="Galleta de la Fortuna"
+            app:titleTextAppearance="@array/preloaded_fonts"
+            app:titleTextColor="@android:color/white" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="170dp"
+        android:fontFamily="@font/aclonica"
+        android:padding="5dp"
+        android:text="Más información"
+        android:textAlignment="center"
+        android:textColor="#FDF3C7"
+        android:textSize="25sp" />
+
+
+    <TextView
+        android:id="@+id/Texto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/lato_italic"
+        android:padding="10dp"
+        android:text="Creador ➜ Pedro .M Padula\n\nHoras Trabajas ➜ 168 horas\n\nLineas Codificadas ➜ 1168 \n\nCoste por hora ➜ 10€/H\n\nCoste total ➜ 1680€"
+        android:textAlignment="center"
+        android:textColor="#FDF3C7"
+        android:textSize="19sp" />
+
+</RelativeLayout>

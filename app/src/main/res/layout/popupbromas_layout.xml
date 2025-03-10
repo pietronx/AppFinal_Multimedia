@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/popupbromas"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#DB363E"
+    tools:context=".Vista.MoreAPIs">
+
+    <LinearLayout
+        android:id="@+id/linearGif"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#454545" >
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/gifImg"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:src="@raw/bromas" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearBromas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearGif"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="#DB363E"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/BromasRecibir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/lato_italic"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearBromas"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/GuardarBroma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#444444"
+            android:fontFamily="@font/lato_bold_italic"
+            android:text="Guardar Broma"
+            app:cornerRadius="5dp" />
+
+
+
+    </LinearLayout>
+</RelativeLayout>
